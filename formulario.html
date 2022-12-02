@@ -1,0 +1,78 @@
+<!--
+AUTOR: JOSETXO ALZUGARAY
+ASIGNATURA: LMSGI
+UNIDAD: UD2
+TAREA: TAREA EVALUATIVA 3: POSICIONAMIENTOS Y FORMULARIO
+-->
+<!DOCTYPE html>
+<html lang="es">
+  
+  <head>
+    <!--DESCRIPCION DEL DOCU-->
+    <meta charset="UTF-8">
+    <meta name ="description" content="zarautz">
+    <meta name= "keywords" content="HTLM5, CSS3, JavaScript">
+    <title> CONTACTO </title>
+     <!-- RESETEO DE ESTILOS-->
+     <link rel="stylesheet" href=estilos\normalize.css>
+     <!-- HOJA DE ESTILOS -->
+     <link rel="stylesheet" href=estilos\estilos1.css>
+      
+  
+  </head>
+  
+  <body>
+    <header>
+	    <h1>CONTACTO</h1>
+    </header>
+    <!--MENU SUPERIOR-->
+    <nav>
+      <ul>
+	      <li class="menusup"><a href="index.html">ZARAUTZ INFO</a></li>
+	      <li class="menusup"><a href="recomendaciones.html">RECOMENDACIONES</a></li>
+	      <li class="menusup"><a href="noticias.html">NOTICIAS</a></li>
+	      <li class="menusup"><a href="formulario.html">CONTACTO</a></li>
+	    </ul> 
+    </nav>
+    <!--FORMULARIO DE CONTACTO-->
+    <form action="mailto:jalzugaray@birt.eus" method="post">
+      <fieldset>
+        <!--TITULO FORMULARIO-->
+	     <legend> CONTACTO </legend>
+       <!--CAMPO-->
+	     <label for="fname">Nombre</label>
+	     <br>
+       <!--TIPO DE DATO-->
+	     <input type="text" id="nombre" name="nombre">
+	     <br>
+	     <label for="lname">Apellido</label>
+	     <br>
+	     <input type="text" id="apellido" name="apellido">
+	     <br>
+	     <br>
+       <!--ETIQUETA PARA EL DESPLEGABLE-->
+	     <label for="tipo"> MOTIVO CONSULTA </label>
+       <!--PARA DECIRLE QUE ES UN DESPLEGABLE-->
+	     <select id="mod" name="mod">
+          <!--OPCIONES DEL DESPLEGABLE-->
+	        <option value="evento cultural"> EVENTO CULTURAL </option>
+	        <option value="evento deportivo"> EVENTO DEPORTIVO </option>
+	        <option value="sugerencia"> SUGERENCIA </option>
+	     </select>
+       <!--BOTON ENVIAR-->
+	     <input type="submit" value="ENVIAR">
+	     <br>
+       <!--PIZARRA PARA ESCRIBIR MENSAJE-->
+	     <textarea name="mensaje" rows="10" cols="120">
+         Escriba aqui su comentario
+       </textarea>
+	    </fieldset>
+    </form>
+    <br>
+    <!--AUTOR Y LICENCIAS-->
+    <footer class="pie">
+      <h1>josetxo alzugaray</h1>
+      <p>Creative Commons Attribution Non-Commercial Share Alike / Atribución-NoComercial-CompartirIgual (CC BY-NC-SA)</p>
+
+    </footer>
+  </body>
